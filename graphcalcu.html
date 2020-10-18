@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unaffected Calculater</title>
+	<style type="text/css">
+	form{
+		height: 100px;
+		width: 300px;
+		margin:auto;
+	}	
+	input{
+		height: 60px;
+		width: 60px;
+		background-color: black;
+		color:white;
+	}
+	.btn{
+		height: 50px;
+		width:180px;
+	}
+	body{
+		background-image: url("un.jpg");
+		height: 100%;
+		background-position: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+.logo
+{
+	float: left;
+	text-decoration: none;
+	background-color:black;
+	color:white;
+	padding: 2px 23px;
+	border:1px solid black;
+}
+.logo:hover
+{
+	background-color: white;
+	color:indianred;
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1>Unaffected Calculater</h1>
+	</div>
+<div id="main">
+	<br>
+	<br>
+	<br>
+<form name="form">
+	<br>
+
+	<input type="text" name="result" class="btn">
+	<br>
+	<input type="button" value=" 1  " onclick="form.result.value +='1'">
+	<input type="button" value=" 2  " onclick="form.result.value +='2'">
+	<input type="button" value=" 3  " onclick="form.result.value +='3'">
+<br>
+<input type="button" value=" 4 " onclick="form.result.value +='4'">
+	<input type="button" value=" 5  " onclick="form.result.value +='5'">
+	<input type="button" value=" 6  " onclick="form.result.value +='6'">
+<br>
+<input type="button" value=" 7 " onclick="form.result.value +='7'">
+	<input type="button" value=" 8  " onclick="form.result.value +='8'">
+	<input type="button" value=" 9  " onclick="form.result.value +='9'">
+<br>
+<input type="button" value=" * " onclick="form.result.value +='*'">
+	<input type="button" value=" +  " onclick="form.result.value +='+'">
+	<input type="button" value=" - " onclick="form.result.value +='-'">
+<br>
+<input type="button" value=" / " onclick="form.result.value +='/'">
+	<input type="button" value=" 0  " onclick="form.result.value +='0'">
+	<input type="button" value=" =  " onclick="form.result.value = eval(form.result.value)">
+<br>
+<input type="button" value=" Clear All " onclick ="form.result.value=''" class="btn">
+
+</form>
+</div>
+</body>
+</html>
